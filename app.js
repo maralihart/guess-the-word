@@ -3,13 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require('express-session');
+// 💡 Add express session -- this helps us manage state
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.use(session({ secret: 'twilio rocks', resave: false, saveUninitialized: false}));
+// 💡 Initialize express session
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

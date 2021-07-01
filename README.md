@@ -12,17 +12,18 @@ A GitHub walkthrough based off of this [tutorial](https://www.twilio.com/blog/sm
 
 1. Fork this repository and clone your fork to your local computer
 2. `cd` into this repository through your terminal
-3. In the terminal, run `npm install twilio express-session` -- this is going to be the basis of our edits today
-4. Open `app.js`
-5. Add the appropriate requirements: 
+3. Run `npm install` to download the necessary packages
+4. In the terminal, run `npm install twilio express-session` -- this is going to be the basis of our edits today
+5. Open `app.js`
+6. Add the appropriate requirements: 
 
 `var session = require('express-session');` after the imports 
 
 `app.use(session({ secret: 'twilio rocks', resave: false, saveUninitialized: false}));` after app is defined. _Note: you wouldn't use a secret like 'twilio rocks' in production, this is only for workshop purposes_
 
-6. Run `npm start` in your terminal to verify that nothing throws an exception
-7. Go to `routes/index.js`
-8. Follow the notes made on that page to complete the workshop, starting with the `INTRO SECTION` on line 15.
+7. Run `npm start` in your terminal to verify that nothing throws an exception
+8. Go to `routes/index.js`
+9. Follow the notes made on that page to complete the workshop, starting with the `INTRO SECTION` on line 15.
 
 ## Running the Game
 

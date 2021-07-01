@@ -14,8 +14,10 @@ A GitHub walkthrough based off of this [tutorial](https://www.twilio.com/blog/sm
 2. `cd` into this repository through your terminal
 3. Run `npm install` to download the necessary packages
 4. In the terminal, run `npm install twilio express-session` -- this is going to be the basis of our edits today
-5. Open `app.js`
-6. Add the appropriate requirements: 
+5. `npm install express-generator -g`
+6. `npm install twilio-cli -g`
+7. Open `app.js`
+8. Add the appropriate requirements: 
 
 `var session = require('express-session');` after the imports 
 
